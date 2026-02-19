@@ -52,18 +52,15 @@ function App() {
           </video>
 
           {/* Dark/Blur Overlay (Optional but recommended for readability) */}
-          <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-black/30 "></div>
         </div>
 
-        {/* Optional: Subtle caption below the video */}
-        <p className="text-center mt-4 text-orange-900/40 text-sm font-medium italic">
-          Watch the video to learn more about our process.
-        </p>
+        
       </div>
 
-      <div className="h-screen overflow-hidden p-4 ">
+      <div className="h-150 overflow-hidden p-4 ">
 
-        <div className='bg-linear-to-r from-red-600 via-orange-500 to-orange-400 text-white mt-10 p-4 max-w-5xl w-auto mx-auto font-bold flex flex-col md:flex-row justify-between items-center rounded-xl shadow-sm'>
+        <div className='bg-linear-to-r from-red-600 via-orange-500 to-orange-400 text-white opacity-75 mt-10 p-4 max-w-5xl w-auto mx-auto font-bold flex flex-col md:flex-row justify-between items-center rounded-xl shadow-sm'>
 
           <div className='text-3xl md:ml-3'>Logo</div>
 
