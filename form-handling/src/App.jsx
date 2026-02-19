@@ -108,11 +108,6 @@ function App() {
 
           </form>
         </div>
-
-        {/* Video Section Wrapper */}
-
-
-
       </div>
       <Toaster position='bottom-center'></Toaster>
     </>
