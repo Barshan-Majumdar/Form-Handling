@@ -5,14 +5,11 @@ import toast, { Toaster } from 'react-hot-toast';
 function App() {
   const { register, handleSubmit, formState: { errors, isValid } } = useForm({ mode: "onChange" })
   const onSubmit = async (data) => {
-    // 1. Create a promise to simulate a database save
     const loadToast = toast.loading('Submitting your data...');
 
     try {
-      // Simulate a 2-second delay
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
-      // 2. Success toast
       toast.success('Form submitted successfully!', {
         id: loadToast, // This replaces the loading toast 
         duration: 5000,
@@ -37,9 +34,6 @@ function App() {
     <>
 
       <div className="mt-16 w-full max-w-4xl mx-auto mb-20 px-4 overflow-hidden">
-
-        {/* The "Frame" of the video */}
-        {/* Background Video */}
         <div className="fixed inset-0 -z-10 overflow-hidden">
           <video
             className="w-full h-full object-cover"
@@ -50,8 +44,6 @@ function App() {
           >
             <source src="/video.mp4" type="video/mp4" />
           </video>
-
-          {/* Dark/Blur Overlay (Optional but recommended for readability) */}
           <div className="absolute inset-0 bg-black/30 "></div>
         </div>
 
