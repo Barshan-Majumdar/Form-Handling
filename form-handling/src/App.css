@@ -1,8 +1,4 @@
-#root {
-  max-width: 100%;
-  text-align: center;
-  background-color: whitesmoke;
-}
+/* #root styles removed for responsiveness */
 
 .logo {
   height: 6em;
