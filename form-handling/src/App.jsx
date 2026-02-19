@@ -90,7 +90,7 @@ function App() {
                   className='w-full border-2 border-orange-400 rounded-lg p-2 outline-none focus:border-orange-500 transition-all placeholder-white'
                   type="password"
                   placeholder='Type Password'
-                  {...register("password", { required: "Password is required", minLength: { value: 8, message: "Password must be at least 8 characters" }, pattern: { value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, message: "Password must contain letters and numbers" } })}
+                  {...register("password", { required: "Password is required", minLength: { value: 8, message: "Password must be at least 8 characters" }})}
                 />
                 {errors.password && <span className='text-red-100 text-sm mt-1'>{errors.password.message}</span>}
               </div>
